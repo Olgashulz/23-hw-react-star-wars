@@ -15,7 +15,7 @@ const SectionRight = () => {
     return (
         <div className="section__friends float-end w-50 row border mx-1 mt-1">
             <h2 className="col-12 text-center">Dream Team</h2>
-            {friends.map(friend => <img src={friend} className="col-4 p-1" alt="friend"/>)}
+            {friends.map((friend, i) => <img src={friend}  key={i++} className="col-4 p-1" alt="friend"/>)}
         </div>
     );
 };
